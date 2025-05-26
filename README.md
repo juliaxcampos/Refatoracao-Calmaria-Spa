@@ -1,4 +1,5 @@
 Esse é um projeto do Curso de HTML da Alura, na formação Front-end. O objetivo é refatorar o código para torna-lo mais semântico e de fácil navegação para pessoas com deficiência que utilizam o teclado apra navegação com uso de leitores de tela como, por exemplo, o NVDA.
+Uma boa semântica também se destaca no SEO.
 
 ![Calmaria Spa](./assets/thumbnail.png)
 
