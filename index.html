@@ -25,7 +25,7 @@
 
     <header class="cabecalho">
         <nav class="cabecalho__nav">
-            <a href="#">
+            <a href="#" aria-label="Página da Calmaria Spa">
                 <img class="cabecalho__nav--logo" src="./assets/logo.png" alt="Logo da Calmaria Spa">
             </a>
             <span class="cabecalho__nav--line"></span>
@@ -58,7 +58,7 @@
                         uma equipe qualificada te ajudam a se livrar do stress com equilíbrio e tranquilidade.</p>
                     //A tag object é uma tag de interatividade, então o valor index padrão é 0. Mudando para -1, o
                     código não adiciona essa tag na leitura via tab
-                    <object tabindex="-1" data="./assets/separador-direita.svg" type="image/svg+xml"></object>
+                    <object aria-hidden="true" tabindex="-1" data="./assets/separador-direita.svg" type="image/svg+xml"></object>
                 </div>
             </article>
             <article class="container__secao--conteudo">
@@ -66,7 +66,7 @@
                     <h2 class="container__secao--conteudo--textos-titulo">Elevando o seu bem-estar</h2>
                     <p class="container__secao--conteudo--textos-infos">Cada visita é uma jornada. Não importa a sua
                         rotina, aqui você encontra seu paraíso particular.</p>
-                    <object tabindex="-1" data="./assets/separador-esquerda.svg" type="image/svg+xml"></object>
+                    <object aria-hidden="true" tabindex="-1" data="./assets/separador-esquerda.svg" type="image/svg+xml"></object>
                 </div>
                 <div>
                     <img class="container__secao--conteudo--img2" src="./assets/espaco-2.png"
@@ -106,11 +106,10 @@
             <img class="container__incricao--tablet" src="./assets/mandala-esquerda-tablet.svg" alt="">
             <div class="container__incricao--div">
                 <h4 class="container__incricao--form-titulo">Inscreva-se para ganhar descontos!</h4>
-                <p class="container__incricao--form-texto">Cadastre-se em nossa <span lang="em">newsletter</span> para receber descontos e
+                <p class="container__incricao--form-texto">Cadastre-se em nossa <span lang="en">newsletter</span> para receber descontos e
                     novidades sobre nossos serviços.</p>
                 <div class="container__incricao--form-input">
                     <form action="">
-                        <label for="inscricao" style="display: none;"></label>
                         <input id="inscricao" type="email" placeholder="Digite seu email">
                         <button>Inscrever</button>
                     </form>
@@ -130,7 +129,7 @@
                 </div>
                 <div action="." class="container__contato--form">
                     <div class="container__contato--form-conteudo">
-                        <h5 class="container__contato--form-conteudo-titulo">Entre em contato</h5>
+                        <h5 id="titulo-contato" class="container__contato--form-conteudo-titulo">Entre em contato</h5>
                         <p class="container__contato--form-conteudo-texto">Reserve seu horário, tire dúvidas ou proponha
                             sugestões, nosso
                             canal é aberto para
@@ -138,12 +137,12 @@
                     </div>
                     <div class="container__contato--inputs">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome completo" name="nome" required>
+                        <input type="text" id="nome" placeholder="Digite seu nome completo" name="contato" required>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Digite seu email" name="email" required>
+                        <input type="email" id="email" placeholder="Digite seu email" name="contato" required>
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" placeholder="(XX) XXXX-XXXX" name="telefone" required>
-                        <fieldset>
+                        <input type="text" id="telefone" placeholder="(XX) XXXX-XXXX" name="contato" required>
+                        <fieldset aria-labelledby="titulo-contato">
                             <legend class="container__contato--inputs--titulo">Prefere contato por:</legend>
                             <div class="container__contato--inputs--div">
                                 <div>
@@ -173,9 +172,9 @@
         <address>
             Acesse nossas redes:
             <ul class="rodape__nav--lista">
-                <li><a href="#" class="rodape__nav--lista--whatsapp"></a></li>
-                <li><a href="#" class="rodape__nav--lista--instagram"></a></li>
-                <li><a href="#" class="rodape__nav--lista--tiktok"></a></li>
+                <li><a href="#" class="rodape__nav--lista--whatsapp" aria-label="Whatsapp Calmaria Spa"></a></li>
+                <li><a href="#" class="rodape__nav--lista--instagram" aria-label="Instagram Calmaria Spa"></a></li>
+                <li><a href="#" class="rodape__nav--lista--tiktok" aria-label="TikTpk Calmaria Spa"></a></li>
             </ul>
             <br>
             <small>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</small>
